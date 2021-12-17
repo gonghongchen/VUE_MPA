@@ -1,6 +1,6 @@
 const path = require('path')
 const isProd = process.env.NODE_ENV === 'production'
-const githubRepoName = 'VUE_MPA'
+const githubRepoName = 'VUE_MPA'	// 远程仓库名字，做 GitHub pages 使用
 const resolve = dir => {
   return path.join(__dirname, dir)
 }
@@ -25,6 +25,7 @@ module.exports = {
     },
   },
 	publicPath: isProd ? `/${githubRepoName}/` : '/',
+	outputDir: 'docs',	// 打包后的文件名改为 docs
   runtimeCompiler: true,
   chainWebpack: config => {
     // 自定义快捷访问路径
