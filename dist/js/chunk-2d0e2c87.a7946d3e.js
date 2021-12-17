@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0e2c87"],{"7fbd":function(n,e,t){"use strict";t.r(e);var c=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[t("h1",[n._v("这里是 desc 页面")]),t("button",{on:{click:function(e){return n.$router.push("/")}}},[n._v("跳转到首页")])])},u=[],r={name:"desc"},o=r,s=t("2877"),l=Object(s["a"])(o,c,u,!1,null,null,null);e["default"]=l.exports}}]);
+//# sourceMappingURL=chunk-2d0e2c87.a7946d3e.js.map
