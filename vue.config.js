@@ -1,4 +1,6 @@
 const path = require('path')
+const isProd = process.env.NODE_ENV === 'production'
+const githubRepoName = 'VUE_MPA'
 const resolve = dir => {
   return path.join(__dirname, dir)
 }
@@ -22,7 +24,7 @@ module.exports = {
       // chunks: ['chunk-vendors', 'chunk-common', 'index2'],
     },
   },
-	publicPath: '/',
+	publicPath: isProd ? `/${githubRepoName}/` : '/',
   runtimeCompiler: true,
   chainWebpack: config => {
     // 自定义快捷访问路径
