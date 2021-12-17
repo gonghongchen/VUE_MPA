@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     jump() {
-      location.href = '/'
+      location.href = process.env.BASE_URL
     }
   },
 }

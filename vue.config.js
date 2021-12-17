@@ -13,7 +13,7 @@ module.exports = {
       entry: './src/index1/main.js',
       template: './src/index1/index.html',  // template 对应的 index.html 这里也改为了每个项目里面独立的 index.html，当然也可以都使用 public 目录下的 index.html
       filename: 'index.html',	// 打包后的首页文件名，可以不自定义。如果不自定义的话，就默认使用入口 key 字段作为名字
-			// chunks 配置的是这个项目打包后需要加载的具体资源块，可以不自定义配置。chunk-vendors 和 chunk-common 是默认加载的内容，index 是自定义的内容，注意：index1 的命名必须和入口字段的命名保持一直，
+			// chunks 配置的是这个项目打包后需要加载的具体资源块，可以不自定义配置。chunk-vendors 和 chunk-common 是默认加载的内容，index 是自定义的内容，注意：index1 的命名必须和入口字段的命名保持一致，
 			// 否则页面会加载不出来（我对比了下正确命名和不正确命名两者打包后 .html 页面引用资源的区别在于不正确命名的情况下会少引用一个 css 文件，可能是这个导致的）
       chunks: ['chunk-vendors', 'chunk-common', 'index'],  
     },
